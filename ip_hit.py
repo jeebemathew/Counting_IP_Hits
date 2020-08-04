@@ -18,6 +18,7 @@ for ip in ipcounter:
 
     hits = ipcounter[ip]
     if hits >= 1000:
-        print(ip,hits)
+        output = '{:20} :{}'.format(ip,hits)
+        print(output)
 
 log.close()
