@@ -14,5 +14,10 @@ for logline in log:
 
         ipcounter[ip] = ipcounter[ip] + 1
         
-print(ipcounter)
+for ip in ipcounter:
+
+    hits = ipcounter[ip]
+    if hits >= 1000:
+        print(ip,hits)
+
 log.close()
