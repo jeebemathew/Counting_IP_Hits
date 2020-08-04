@@ -1,5 +1,6 @@
-logfile = input('Enter your accesslog name : ')
 minhits = input('Enter minimum number of Hits : ')
+
+logfile = '/root/python/access.log'
 
 ipcounter = {}
 
