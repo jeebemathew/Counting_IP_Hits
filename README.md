@@ -1,4 +1,4 @@
-# Counting_Ip-_Hits-
+# Counting_Ip-_Hits
 
 ### Python - This python code is written to find the the number of connections from an IP in the access log .
 
