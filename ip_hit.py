@@ -1,4 +1,6 @@
-logfile = '/root/python/access.log'
+logfile = input('Enter your accesslog name : ')
+minhits = input('Enter minimum number of Hits : ')
+
 ipcounter = {}
 
 log = open(logfile)
@@ -17,7 +19,7 @@ for logline in log:
 for ip in ipcounter:
 
     hits = ipcounter[ip]
-    if hits >= 1000:
+    if hits >= int(minhits):
         output = '{:20} :{}'.format(ip,hits)
         print(output)
 
