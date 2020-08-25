@@ -1,6 +1,6 @@
 # Counting_Ip-_Hits
 
-### Python - This python code is written to find the the number of connections from an IP in the access log .
+### Python - This python code is written to find the the number of connections from an IP in access log .
 
 When a webserver gets a hits from a IP address, access_log will look like the following.
 
