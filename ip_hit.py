@@ -1,6 +1,13 @@
-minhits = input('Enter minimum number of Hits : ')
+import argparse
 
-logfile = '/root/python/access.log'
+args = argparse.ArgumentParser()
+args.add_argument('-f', type=str, help='input log file to check', required=False)
+passedArgs = vars(args.parse_args())
+logfile = passedArgs['f']
+
+minhits = input('Enter minimum number of Hits : ')
+if logfile == None:
+    logfile = '/root/python/access.log'
 
 ipcounter = {}
 
